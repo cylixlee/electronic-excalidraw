@@ -11,12 +11,14 @@ import { woff2BrowserPlugin } from "../scripts/woff2/woff2-vite-plugins";
 export default defineConfig(({ mode }) => {
   // To load .env variables
   const envVars = loadEnv(mode, `../`);
+  const isElectron = process.env.ELECTRON === "true";
   // https://vitejs.dev/config/
   return {
+    base: isElectron ? "./" : "/",
     server: {
       port: Number(envVars.VITE_APP_PORT || 3000),
       // open the browser
-      open: true,
+      open: !isElectron,
     },
     // We need to specify the envDir since now there are no
     //more located in parallel with the vite.config.ts file but in parent dir
@@ -142,10 +144,12 @@ export default defineConfig(({ mode }) => {
       ViteEjsPlugin(),
       VitePWA({
         registerType: "autoUpdate",
+        injectRegister: "auto",
         devOptions: {
           /* set this flag to true to enable in Development mode */
-          enabled: envVars.VITE_APP_ENABLE_PWA === "true",
+          enabled: envVars.VITE_APP_ENABLE_PWA === "true" && !isElectron,
         },
+        disable: isElectron,
 
         workbox: {
           // don't precache fonts, locales and separate chunks
