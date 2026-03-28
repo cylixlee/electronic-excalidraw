@@ -32,8 +32,6 @@
     "@excalidraw/random-username": "1.0.0",
     "@sentry/browser": "9.0.1",
     "callsites": "4.2.0",
-    "electron-log": "5.4.3",
-    "electron-updater": "6.8.3",
     "firebase": "11.3.1",
     "i18next-browser-languagedetector": "6.1.4",
     "idb-keyval": "6.0.3",
@@ -66,7 +64,6 @@
     "concurrently": "9.2.1",
     "electron": "41.1.0",
     "electron-builder": "26.8.1",
-    "vite-plugin-sitemap": "0.7.1",
     "wait-on": "9.0.4"
   },
   "build": {
