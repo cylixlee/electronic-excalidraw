@@ -2,6 +2,8 @@
 
 Electron desktop application for [Excalidraw](https://github.com/excalidraw/excalidraw). Pre-built binaries are available on the [Releases](https://github.com/cylixlee/electronic-excalidraw/releases) page.
 
+[![Lint](https://github.com/cylixlee/electronic-excalidraw/actions/workflows/lint.yml/badge.svg)](https://github.com/cylixlee/electronic-excalidraw/actions/workflows/lint.yml) [![Test](https://github.com/cylixlee/electronic-excalidraw/actions/workflows/test.yml/badge.svg)](https://github.com/cylixlee/electronic-excalidraw/actions/workflows/test.yml)
+
 > [!IMPORTANT]
 >
 > **This is a downstream fork.** If you're looking for the original Excalidraw, please visit the [upstream repository](https://github.com/excalidraw/excalidraw).
