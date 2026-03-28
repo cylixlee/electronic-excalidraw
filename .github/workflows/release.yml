@@ -11,13 +11,23 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-
+        include:
+          - os: ubuntu-latest
+            ext: AppImage
+            artifact: installer-ubuntu-latest
+          - os: macos-latest
+            ext: dmg
+            artifact: installer-macos-latest
+          - os: windows-latest
+            ext: exe
+            artifact: installer-windows-latest
+    outputs:
+      ext: ${{ matrix.ext }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: yarn
@@ -32,21 +42,18 @@ jobs:
           VITE_APP_ENABLE_PWA: false
 
       - name: Upload installer
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
-          name: installer-${{ matrix.os }}
-          path: |
-            excalidraw-app/release/*.exe
-            excalidraw-app/release/*.dmg
-            excalidraw-app/release/*.AppImage
+          name: ${{ matrix.artifact }}
+          path: excalidraw-app/release/*.${{ matrix.ext }}
 
   release:
     name: Create Release
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
+      - name: Download artifacts
+        uses: actions/download-artifact@v8
         with:
           pattern: installer-*
           path: artifacts
@@ -55,10 +62,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            *.exe
-            *.dmg
-            *.AppImage
+          files: artifacts/*
           draft: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
