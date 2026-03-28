@@ -437,7 +437,8 @@
     "movePageUpDown": "",
     "movePageLeftRight": "",
     "cropStart": "Kép kivágása",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Ha problémába ütközik, kérjük, látogassa meg az Electronic Excalidraw adattárat"
   },
   "clearCanvasDialog": {
     "title": "Rajzvászon alaphelyzetbe"

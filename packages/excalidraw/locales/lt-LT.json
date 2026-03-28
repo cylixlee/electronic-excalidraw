@@ -437,7 +437,8 @@
     "movePageUpDown": "Pajudinti puslapį aukštyn/žemyn",
     "movePageLeftRight": "Pajudinti puslapį kairėn/dešinėn",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Jei kyla problemu, aplankykite Electronic Excalidraw saugyklą"
   },
   "clearCanvasDialog": {
     "title": "Išvalyti drobę"

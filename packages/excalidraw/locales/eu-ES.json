@@ -437,7 +437,8 @@
     "movePageUpDown": "Mugitu orria gora/behera",
     "movePageLeftRight": "Mugitu orria ezker/eskuin",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Arazoren bat baduzu, mesedez bisitatu Electronic Excalidraw biltegia"
   },
   "clearCanvasDialog": {
     "title": "Garbitu oihala"

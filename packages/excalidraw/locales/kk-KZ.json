@@ -437,7 +437,8 @@
     "movePageUpDown": "",
     "movePageLeftRight": "",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Егер сізде проблемалар туындаса, Electronic Excalidraw қоймасына кіріңіз"
   },
   "clearCanvasDialog": {
     "title": ""

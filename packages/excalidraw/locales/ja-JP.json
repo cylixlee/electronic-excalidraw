@@ -437,7 +437,8 @@
     "movePageUpDown": "ページを上下に移動",
     "movePageLeftRight": "ページを左右に移動",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "問題が発生した場合は、Electronic Excalidraw リポジトリをご覧ください"
   },
   "clearCanvasDialog": {
     "title": "キャンバスを消去"

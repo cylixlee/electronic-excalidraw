@@ -437,7 +437,8 @@
     "movePageUpDown": "向上/下移動頁面",
     "movePageLeftRight": "向左/右移動頁面",
     "cropStart": "裁切圖片",
-    "cropFinish": "完成圖片裁切"
+    "cropFinish": "完成圖片裁切",
+    "electronicExcalidrawRepo": "如遇問題，請訪問 Electronic Excalidraw 倉庫"
   },
   "clearCanvasDialog": {
     "title": "清除畫布"

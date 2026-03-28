@@ -437,7 +437,8 @@
     "movePageUpDown": "Desplaçar la pagina ennaut/enbàs",
     "movePageLeftRight": "Desplaçar la pagina a esquèrra/drecha",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Se encontratz un problèma, visitatz lo depaus Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Escafar canabàs"

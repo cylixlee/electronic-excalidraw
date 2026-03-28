@@ -437,7 +437,8 @@
     "movePageUpDown": "Sposta la pagina su/giù",
     "movePageLeftRight": "Sposta la pagina a sinistra/destra",
     "cropStart": "Ritaglia immagine",
-    "cropFinish": "Termina ritaglio immagine"
+    "cropFinish": "Termina ritaglio immagine",
+    "electronicExcalidrawRepo": "Se riscontri problemi, visita il repository di Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Svuota la tela"

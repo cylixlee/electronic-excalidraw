@@ -437,7 +437,8 @@
     "movePageUpDown": "Przesuń stronę w górę/w dół",
     "movePageLeftRight": "Przenieś stronę w lewo/prawo",
     "cropStart": "Przytnij obraz",
-    "cropFinish": "Zakończ przycinanie obrazu"
+    "cropFinish": "Zakończ przycinanie obrazu",
+    "electronicExcalidrawRepo": "Jeśli napotkasz problemy, odwiedź repozytorium Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Wyczyść płótno"

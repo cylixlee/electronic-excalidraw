@@ -437,7 +437,8 @@
     "movePageUpDown": "Seite nach oben/unten verschieben",
     "movePageLeftRight": "Seite nach links/rechts verschieben",
     "cropStart": "Bild zuschneiden",
-    "cropFinish": "Zuschneiden des Bildes beenden"
+    "cropFinish": "Zuschneiden des Bildes beenden",
+    "electronicExcalidrawRepo": "Wenn Sie auf Probleme stoßen, besuchen Sie bitte das Electronic Excalidraw Repository"
   },
   "clearCanvasDialog": {
     "title": "Zeichenfläche löschen"

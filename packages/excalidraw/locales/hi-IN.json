@@ -437,7 +437,8 @@
     "movePageUpDown": "पृष्ठ ऊपर/नीचे करे",
     "movePageLeftRight": "पृष्ठ बायी/दायी तरफ करे",
     "cropStart": "प्रतिमा काटें",
-    "cropFinish": "प्रतिमा काटना समाप्त करें"
+    "cropFinish": "प्रतिमा काटना समाप्त करें",
+    "electronicExcalidrawRepo": "यदि आपको समस्याएं आती हैं, तो कृपया Electronic Excalidraw रिपॉजिटरी पर जाएं"
   },
   "clearCanvasDialog": {
     "title": "चित्रपलट स्वच्छ करे"

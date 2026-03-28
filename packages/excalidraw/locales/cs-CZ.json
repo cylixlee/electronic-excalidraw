@@ -437,7 +437,8 @@
     "movePageUpDown": "Posunout stránku nahoru/dolů",
     "movePageLeftRight": "Přesunout stránku doleva/doprava",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Pokud narazíte na problémy, navštivte repozitář Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Vymazat plátno"

@@ -437,7 +437,8 @@
     "movePageUpDown": "Flytta sida upp/ner",
     "movePageLeftRight": "Flytta sida vänster/höger",
     "cropStart": "Beskär bild",
-    "cropFinish": "Slutför bildbeskärningen"
+    "cropFinish": "Slutför bildbeskärningen",
+    "electronicExcalidrawRepo": "Om du stöter på problem, vänligen besök Electronic Excalidraw repo"
   },
   "clearCanvasDialog": {
     "title": "Rensa canvas"

@@ -437,7 +437,8 @@
     "movePageUpDown": "Pārvietot lapu augšup/lejup",
     "movePageLeftRight": "Pārvietot lapu pa labi/kreisi",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Ja saskaraties ar problemām, lūdzu, apmeklējiet Electronic Excalidraw repozitoriju"
   },
   "clearCanvasDialog": {
     "title": "Notīrīt tāfeli"

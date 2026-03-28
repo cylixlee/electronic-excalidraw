@@ -437,7 +437,8 @@
     "movePageUpDown": "ផ្លាស់ទីទំព័រឡើងលើ/ចុះក្រោម",
     "movePageLeftRight": "ផ្លាស់ទីទំព័រទៅឆ្វេង/ស្ដាំ",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "ប្រសិនបើអ្នកជួបប្រទះបញ្ហា សូមចូលទៅកាន់ឃ្លាំង Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "សម្អាតបាវ"

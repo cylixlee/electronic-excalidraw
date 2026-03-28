@@ -437,7 +437,8 @@
     "movePageUpDown": "Mou la pàgina cap amunt/a baix",
     "movePageLeftRight": "Mou la pàgina cap a l'esquerra/dreta",
     "cropStart": "Retallar l'imatge",
-    "cropFinish": "Finalitza el retall d'imatge"
+    "cropFinish": "Finalitza el retall d'imatge",
+    "electronicExcalidrawRepo": "Si trobeu problemes, visiteu el repositori d'Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Neteja el llenç"

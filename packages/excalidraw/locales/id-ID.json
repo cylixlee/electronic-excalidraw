@@ -437,7 +437,8 @@
     "movePageUpDown": "Pindah halaman keatas/kebawah",
     "movePageLeftRight": "Pindah halaman kebawah/keatas",
     "cropStart": "Pangkas gambar",
-    "cropFinish": "Sudahi pangkas gambar"
+    "cropFinish": "Sudahi pangkas gambar",
+    "electronicExcalidrawRepo": "Jika Anda mengalami masalah, silakan kunjungi repositori Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Hapus kanvas"

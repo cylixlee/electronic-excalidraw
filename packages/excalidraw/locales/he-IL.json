@@ -437,7 +437,8 @@
     "movePageUpDown": "זוז עמוד למעלה/למטה",
     "movePageLeftRight": "זוז עמוד שמאלה/ימינה",
     "cropStart": "חיתוך תמונה",
-    "cropFinish": "סיים לחתוך תמונה"
+    "cropFinish": "סיים לחתוך תמונה",
+    "electronicExcalidrawRepo": "אם נתקלת בבעיות, אנא בקר במאגר Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "ניקוי הקנבס"

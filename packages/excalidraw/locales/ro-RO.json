@@ -437,7 +437,8 @@
     "movePageUpDown": "Deplasare pagină sus/jos",
     "movePageLeftRight": "Deplasare pagină stânga/dreapta",
     "cropStart": "Decupare imagine",
-    "cropFinish": "Finalizare decupare imagine"
+    "cropFinish": "Finalizare decupare imagine",
+    "electronicExcalidrawRepo": "Dacă întâmpinați probleme, vă rugăm să vizitați repository-ul Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Ștergere pânză"

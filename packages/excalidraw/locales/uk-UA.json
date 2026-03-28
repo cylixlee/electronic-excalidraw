@@ -437,7 +437,8 @@
     "movePageUpDown": "Пересунути сторінку вгору/вниз",
     "movePageLeftRight": "Пересунути сторінку вліво/вправо",
     "cropStart": "Обрізати зображення",
-    "cropFinish": "Закінчити обрізку зображення"
+    "cropFinish": "Закінчити обрізку зображення",
+    "electronicExcalidrawRepo": "Якщо у вас виникли проблеми, відвідайте репозиторій Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Очистити полотно"

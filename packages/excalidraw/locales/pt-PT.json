@@ -437,7 +437,8 @@
     "movePageUpDown": "Mover página para cima / baixo",
     "movePageLeftRight": "Mover página para esquerda / direita",
     "cropStart": "Recortar imagem",
-    "cropFinish": "Finalizar recorte da imagem"
+    "cropFinish": "Finalizar recorte da imagem",
+    "electronicExcalidrawRepo": "Se tiver problemas, visite o repositório do Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Apagar área de desenho"

@@ -437,7 +437,8 @@
     "movePageUpDown": "පිටුව ඉහළට/පහළට ගෙනයාම",
     "movePageLeftRight": "පිටුව වමට/දකුණට ගෙනයාම",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "ගැටලුවක් ඇතිනම්, කරුණාකර Electronic Excalidraw නිධිය වෙත පිවිසෙන්න"
   },
   "clearCanvasDialog": {
     "title": "කැන්වසය පිරිසිදු කිරීමේ සංවාදය"

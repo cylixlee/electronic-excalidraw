@@ -437,7 +437,8 @@
     "movePageUpDown": "Flytt side opp/ned",
     "movePageLeftRight": "Flytt siden til venstre/høyre",
     "cropStart": "Beskjær bilde",
-    "cropFinish": "Fullfør bildebeskjæring"
+    "cropFinish": "Fullfør bildebeskjæring",
+    "electronicExcalidrawRepo": "Hvis du støter på problemer, vennligst besøk Electronic Excalidraw depotet"
   },
   "clearCanvasDialog": {
     "title": "Tøm lerret"

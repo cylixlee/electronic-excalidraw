@@ -437,7 +437,8 @@
     "movePageUpDown": "Chuyển trang lên/xuống",
     "movePageLeftRight": "Chuyển trang trái/phải",
     "cropStart": "Cắt ảnh",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Nếu bạn gặp vấn đề, vui lòng truy cập kho lưu trữ Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Dọn canvas"

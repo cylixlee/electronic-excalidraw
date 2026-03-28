@@ -1,6 +1,7 @@
-import { app, BrowserWindow, dialog, ipcMain, Menu } from "electron";
 import path from "path";
 import fs from "fs";
+
+import { app, BrowserWindow, dialog, ipcMain, Menu } from "electron";
 
 const isDev = !app.isPackaged;
 

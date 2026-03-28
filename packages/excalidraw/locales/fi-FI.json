@@ -437,7 +437,8 @@
     "movePageUpDown": "Siirrä sivua ylös/alas",
     "movePageLeftRight": "Siirrä sivua vasemmalle/oikealle",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Jos kohtaat ongelmia, vieraile Electronic Excalidraw -repositorossa"
   },
   "clearCanvasDialog": {
     "title": "Pyyhi piirtoalue"

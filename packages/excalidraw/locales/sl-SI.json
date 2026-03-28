@@ -437,7 +437,8 @@
     "movePageUpDown": "Premakni stran gor/dol",
     "movePageLeftRight": "Premakni stran levo/desno",
     "cropStart": "Obreži sliko",
-    "cropFinish": "Dokončaj obrezovanje slike"
+    "cropFinish": "Dokončaj obrezovanje slike",
+    "electronicExcalidrawRepo": "Če naletite na težave, obiščite skladišče Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Počisti platno"

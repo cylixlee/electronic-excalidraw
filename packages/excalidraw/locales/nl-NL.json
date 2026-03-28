@@ -437,7 +437,8 @@
     "movePageUpDown": "Pagina omhoog/omlaag",
     "movePageLeftRight": "Verplaats pagina links/rechts",
     "cropStart": "Afbeelding bijsnijden",
-    "cropFinish": "Afbeelding bijsnijden voltooien"
+    "cropFinish": "Afbeelding bijsnijden voltooien",
+    "electronicExcalidrawRepo": "Als u problemen ondervindt, bezoek dan de Electronic Excalidraw repository"
   },
   "clearCanvasDialog": {
     "title": "Wis canvas"

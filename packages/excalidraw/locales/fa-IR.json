@@ -437,7 +437,8 @@
     "movePageUpDown": "حرکت صفحه به بالا/پایین",
     "movePageLeftRight": "حرکت صفحه به چپ/راست",
     "cropStart": "برش تصویر",
-    "cropFinish": "پایان برش تصویر"
+    "cropFinish": "پایان برش تصویر",
+    "electronicExcalidrawRepo": "اگر با مشکلی مواجه شدید، لطفاً از مخزن Electronic Excalidraw بازدید کنید"
   },
   "clearCanvasDialog": {
     "title": "پاک کردن بوم"

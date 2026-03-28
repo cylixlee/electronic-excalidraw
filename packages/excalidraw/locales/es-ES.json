@@ -437,7 +437,8 @@
     "movePageUpDown": "Mover página hacia arriba/abajo",
     "movePageLeftRight": "Mover página hacia la izquierda/derecha",
     "cropStart": "Recortar imagen",
-    "cropFinish": "Terminar recorte de imagen"
+    "cropFinish": "Terminar recorte de imagen",
+    "electronicExcalidrawRepo": "Si encuentras problemas, visita el repositorio de Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Borrar lienzo"

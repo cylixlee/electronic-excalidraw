@@ -437,7 +437,8 @@
     "movePageUpDown": "لاپەڕەکە بجوڵێنە بۆ سەرەوە/خوارەوە",
     "movePageLeftRight": "لاپەڕەکە بجوڵێنە بۆ چەپ/ڕاست",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Heger pirsgirîn tênitin, dema Electronic Excalidraw repositoriyê"
   },
   "clearCanvasDialog": {
     "title": "تابلۆکە خاوێن بکەرەوە"

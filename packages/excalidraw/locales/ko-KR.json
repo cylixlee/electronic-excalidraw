@@ -437,7 +437,8 @@
     "movePageUpDown": "페이지 움직이기 위/아래",
     "movePageLeftRight": "페이지 움직이기 좌/우",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "문제가 발생하면 Electronic Excalidraw 저장소를 방문하세요"
   },
   "clearCanvasDialog": {
     "title": "캔버스 지우기"

@@ -437,7 +437,8 @@
     "movePageUpDown": "Премести страница нагоре/надолу",
     "movePageLeftRight": "Премести страница наляво/надясно",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Ако срещнете проблеми, моля, посетете хранилището на Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Изчисти платното"

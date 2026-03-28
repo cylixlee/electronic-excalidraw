@@ -437,7 +437,8 @@
     "movePageUpDown": "",
     "movePageLeftRight": "",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Viss du fortener problem, ver venleg og vitj Electronic Excalidraw depotet"
   },
   "clearCanvasDialog": {
     "title": "Tøm lerretet"

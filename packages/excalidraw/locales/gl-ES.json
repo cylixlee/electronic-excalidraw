@@ -437,7 +437,8 @@
     "movePageUpDown": "Mover páxina cara enriba/abaixo",
     "movePageLeftRight": "Mover páxina cara a esquerda/dereita",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Se atopas con problemas, visita o repositorio de Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Limpar lenzo"

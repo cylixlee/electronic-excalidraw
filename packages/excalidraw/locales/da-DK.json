@@ -437,7 +437,8 @@
     "movePageUpDown": "",
     "movePageLeftRight": "",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Hvis du støder på problemer, besøg venligst Electronic Excalidraw repository"
   },
   "clearCanvasDialog": {
     "title": ""

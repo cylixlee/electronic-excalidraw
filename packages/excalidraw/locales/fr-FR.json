@@ -437,7 +437,8 @@
     "movePageUpDown": "Déplacer la page vers le haut/bas",
     "movePageLeftRight": "Déplacer la page vers la gauche/droite",
     "cropStart": "Rogner l’image",
-    "cropFinish": "Terminer le recadrage de l'image"
+    "cropFinish": "Terminer le recadrage de l'image",
+    "electronicExcalidrawRepo": "Si vous rencontrez des problèmes, veuillez visiter le dépôt Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Effacer la zone de dessin"

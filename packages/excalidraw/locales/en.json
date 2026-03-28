@@ -456,7 +456,8 @@
     "movePageUpDown": "Move page up/down",
     "movePageLeftRight": "Move page left/right",
     "cropStart": "Crop image",
-    "cropFinish": "Finish image cropping"
+    "cropFinish": "Finish image cropping",
+    "electronicExcalidrawRepo": "If you encounter issues, please visit the Electronic Excalidraw repository"
   },
   "clearCanvasDialog": {
     "title": "Clear canvas"

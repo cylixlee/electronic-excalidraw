@@ -437,7 +437,8 @@
     "movePageUpDown": "Sayfayı yukarı/aşağı kaydır",
     "movePageLeftRight": "Sayfayı sola/sağa kaydır",
     "cropStart": "",
-    "cropFinish": ""
+    "cropFinish": "",
+    "electronicExcalidrawRepo": "Sorunlarla karşılaşırsanız, lütfen Electronic Excalidraw deposunu ziyaret edin"
   },
   "clearCanvasDialog": {
     "title": "Tuvali temizle"

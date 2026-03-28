@@ -437,7 +437,8 @@
     "movePageUpDown": "Posunúť stranu hore/dole",
     "movePageLeftRight": "Posunúť stranu doľava/doprava",
     "cropStart": "Orezať obrázok",
-    "cropFinish": "Dokončiť orezávanie obrázka"
+    "cropFinish": "Dokončiť orezávanie obrázka",
+    "electronicExcalidrawRepo": "Ak narazíte na problémy, navštívte repozitár Electronic Excalidraw"
   },
   "clearCanvasDialog": {
     "title": "Vyčistiť plátno"

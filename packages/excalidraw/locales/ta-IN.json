@@ -437,7 +437,8 @@
     "movePageUpDown": "மேலே/கீழே நகர்த்தவும்",
     "movePageLeftRight": "இடது/வலது பக்கம் நகர்த்தவும்",
     "cropStart": "படத்தை வெட்டு",
-    "cropFinish": "முடி"
+    "cropFinish": "முடி",
+    "electronicExcalidrawRepo": "சிக்கல்கள் ஏற்பட்டால், Electronic Excalidraw களஞ்சத்தை அணுகவும்"
   },
   "clearCanvasDialog": {
     "title": "கித்தானைத் துடை"
