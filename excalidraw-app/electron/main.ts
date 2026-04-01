@@ -6,13 +6,36 @@ import { app, BrowserWindow, dialog, ipcMain, Menu } from "electron";
 const isDev = !app.isPackaged;
 
 let mainWindow: BrowserWindow | null = null;
+let currentFilePath: string | null = null;
+
+const APP_NAME = "Electronic Excalidraw";
+
+const getLaunchFilePath = (): string | null => {
+  const fileArg = process.argv.find((arg) => arg.endsWith(".excalidraw"));
+  return fileArg && fs.existsSync(fileArg) ? fileArg : null;
+};
+
+const updateWindowTitle = () => {
+  if (!mainWindow) {
+    return;
+  }
+  const baseTitle = currentFilePath
+    ? `${path.basename(currentFilePath)} - ${APP_NAME}`
+    : APP_NAME;
+  mainWindow.setTitle(baseTitle);
+};
 
 function createWindow(): void {
+  currentFilePath = getLaunchFilePath();
+
   mainWindow = new BrowserWindow({
     width: 1400,
     height: 900,
     minWidth: 800,
     minHeight: 600,
+    title: currentFilePath
+      ? `${path.basename(currentFilePath)} - ${APP_NAME}`
+      : APP_NAME,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
@@ -76,7 +99,7 @@ function setupIPC(): void {
   ipcMain.handle("open-file", async () => {
     const result = await dialog.showOpenDialog(mainWindow!, {
       filters: [
-        { name: "Excalidraw", extensions: ["excalidraw", "json"] },
+        { name: "Excalidraw", extensions: ["excalidraw"] },
         { name: "All Files", extensions: ["*"] },
       ],
       properties: ["openFile"],
@@ -89,6 +112,34 @@ function setupIPC(): void {
     }
     return null;
   });
+
+  ipcMain.handle("get-launch-file", async () => {
+    const filePath = getLaunchFilePath();
+    if (filePath) {
+      try {
+        const content = fs.readFileSync(filePath, "utf-8");
+        JSON.parse(content);
+        return { filePath, content };
+      } catch {
+        return null;
+      }
+    }
+    return null;
+  });
+
+  ipcMain.handle("set-title", async (_event, title: string) => {
+    if (mainWindow) {
+      mainWindow.setTitle(title);
+    }
+  });
+
+  ipcMain.handle(
+    "set-current-file",
+    async (_event, filePath: string | null) => {
+      currentFilePath = filePath;
+      updateWindowTitle();
+    },
+  );
 }
 
 app.whenReady().then(() => {

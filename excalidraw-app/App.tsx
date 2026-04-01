@@ -143,7 +143,27 @@ if (window.self !== window.top) {
 
 const initializeScene = async (opts: {
   excalidrawAPI: ExcalidrawImperativeAPI;
+  launchFile?: { filePath: string; content: string } | null;
 }): Promise<{ scene: ExcalidrawInitialDataState | null }> => {
+  if (opts.launchFile) {
+    try {
+      const blob = new Blob([opts.launchFile.content], {
+        type: "application/json",
+      });
+      const data = await loadFromBlob(blob, null, null);
+      return { scene: data };
+    } catch (error) {
+      const filename = opts.launchFile.filePath.split(/[/\\]/).pop();
+      return {
+        scene: {
+          appState: {
+            errorMessage: `Failed to open "${filename}": Invalid file format`,
+          },
+        },
+      };
+    }
+  }
+
   const searchParams = new URLSearchParams(window.location.search);
   const id = searchParams.get("id");
   const jsonBackendMatch = window.location.hash.match(
@@ -250,10 +270,27 @@ const ExcalidrawWrapper = () => {
   const excalidrawAPI = useExcalidrawAPI();
 
   const [errorMessage, setErrorMessage] = useState("");
+  const [currentFilePath, setCurrentFilePath] = useState<string | null>(null);
+  const [isDirty, setIsDirty] = useState(false);
 
   const { editorTheme, appTheme, setAppTheme } = useHandleAppTheme();
 
   const [langCode, setLangCode] = useAppLangCode();
+
+  const getBasename = (filePath: string) =>
+    filePath.split(/[/\\]/).pop() || filePath;
+
+  useEffect(() => {
+    if (window.electronAPI) {
+      const title = currentFilePath
+        ? `${getBasename(currentFilePath)}${
+            isDirty ? " *" : ""
+          } - Electronic Excalidraw`
+        : "Electronic Excalidraw";
+      window.electronAPI.setTitle(title);
+      window.electronAPI.setCurrentFile(currentFilePath);
+    }
+  }, [currentFilePath, isDirty]);
 
   const initialStatePromiseRef = useRef<{
     promise: ResolvablePromise<ExcalidrawInitialDataState | null>;
@@ -337,10 +374,18 @@ const ExcalidrawWrapper = () => {
       return;
     }
 
-    initializeScene({ excalidrawAPI }).then(async (data) => {
+    const init = async () => {
+      const launchFile = await window.electronAPI?.getLaunchFile();
+      if (launchFile) {
+        setCurrentFilePath(launchFile.filePath);
+      }
+
+      const data = await initializeScene({ excalidrawAPI, launchFile });
       loadImages(data, true);
       initialStatePromiseRef.current.promise.resolve(data.scene);
-    });
+    };
+
+    init();
 
     const onHashChange = async (event: HashChangeEvent) => {
       event.preventDefault();
@@ -479,6 +524,10 @@ const ExcalidrawWrapper = () => {
     appState: AppState,
     files: BinaryFiles,
   ) => {
+    if (currentFilePath) {
+      setIsDirty(true);
+    }
+
     if (!LocalData.isSavePaused()) {
       LocalData.save(elements, appState, files, () => {
         if (excalidrawAPI) {

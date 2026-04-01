@@ -1,6 +1,6 @@
 {
   "name": "excalidraw-app",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Excalidraw Desktop Application",
   "author": "Excalidraw Team",
   "main": "dist/electron/main.js",
@@ -72,19 +72,40 @@
           ]
         }
       ],
-      "icon": "../public/favicon.ico"
+      "icon": "../public/favicon.ico",
+      "fileAssociations": [
+        {
+          "ext": "excalidraw",
+          "name": "Excalidraw Drawing",
+          "description": "Excalidraw Drawing File"
+        }
+      ]
     },
     "mac": {
       "target": [
         "dmg"
       ],
-      "icon": "public/icons/icon.icns"
+      "icon": "public/icons/icon.icns",
+      "fileAssociations": [
+        {
+          "ext": "excalidraw",
+          "name": "Excalidraw Drawing",
+          "description": "Excalidraw Drawing File"
+        }
+      ]
     },
     "linux": {
       "target": [
         "AppImage"
       ],
-      "icon": "public/icons"
+      "icon": "public/icons",
+      "fileAssociations": [
+        {
+          "ext": "excalidraw",
+          "name": "Excalidraw Drawing",
+          "description": "Excalidraw Drawing File"
+        }
+      ]
     },
     "nsis": {
       "oneClick": false,

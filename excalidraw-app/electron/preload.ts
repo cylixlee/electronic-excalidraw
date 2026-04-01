@@ -7,6 +7,9 @@ export interface ElectronAPI {
     defaultFileName?: string,
   ) => Promise<string | null>;
   exportFile: (content: string, extension: string) => Promise<string | null>;
+  getLaunchFile: () => Promise<{ filePath: string; content: string } | null>;
+  setTitle: (title: string) => Promise<void>;
+  setCurrentFile: (filePath: string | null) => Promise<void>;
 }
 
 const electronAPI: ElectronAPI = {
@@ -15,6 +18,10 @@ const electronAPI: ElectronAPI = {
     ipcRenderer.invoke("save-content", content, defaultFileName),
   exportFile: (content, extension) =>
     ipcRenderer.invoke("export-file", content, extension),
+  getLaunchFile: () => ipcRenderer.invoke("get-launch-file"),
+  setTitle: (title) => ipcRenderer.invoke("set-title", title),
+  setCurrentFile: (filePath) =>
+    ipcRenderer.invoke("set-current-file", filePath),
 };
 
 contextBridge.exposeInMainWorld("electronAPI", electronAPI);
